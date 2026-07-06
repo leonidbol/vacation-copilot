@@ -12,11 +12,11 @@ The project uses a streamlined layout inside the `app/` folder, separating the c
 vacation-copilot/
 ├── app/
 │   ├── __init__.py            # Exports the main FastAPI App
-│   ├── agent.py               # Central Core Agent configuration (root_agent)
+│   ├── agent.py               # Central Unified Agent configuration (root_agent)
 │   ├── fast_api_app.py        # FastAPI server wrapping the ADK App runtime
 │   ├── shared/                # Code shared across tools and modes
 │   │   └── markdown_store.py  # Markdown persistence layer (saves profiles & itineraries)
-│   └── tools/                 # Atomic Python tools executed directly by the loop
+│   └── tools/                 # Isolated functional Python tools
 │       ├── document_parser.py # Parses text/tokens from incoming travel docs
 │       └── menu_analyzer.py   # Processes restaurant menus against profile constraints
 ├── data/                      # Local markdown-based user sandboxes (auto-created)
