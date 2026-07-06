@@ -122,7 +122,7 @@ Your mission is to analyze restaurant menus and surface optimized dish choices b
 # ── Agent Definition ──────────────────────────────────────────────
 root_agent = Agent(
     name="vacation_copilot",
-    model="gemini-2.5-flash",
+    model="gemini-3.5-flash",
     instruction=ROOT_INSTRUCTION,
     description="Elite unified travel concierge that handles pre-trip onboarding and live dining recommendations.",
     tools=[

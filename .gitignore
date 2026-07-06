@@ -39,4 +39,7 @@ Thumbs.db
 
 # 💾 Runtime Data and Test Sandboxes
 data/
-!data/.gitkeepapp/.adk/
+!data/.gitkeep
+
+# 🤖 Google ADK Runtime State
+app/.adk/
