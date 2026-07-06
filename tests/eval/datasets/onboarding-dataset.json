@@ -1,0 +1,114 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "onboarding_greeting",
+      "conversation": [
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Hi! I'm planning a trip to Barcelona next month."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_case_id": "onboarding_flight_paste",
+      "conversation": [
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "I need help planning my Greece trip."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Here's my flight info: Aegean Airlines A3610, Athens to Santorini, departing Aug 20 at 10:15 AM, arriving 10:55 AM. Confirmation: GR2026X."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_case_id": "menu_matching",
+      "conversation": [
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "I'm gluten-free and prefer high-protein meals. I love authentic local cuisine."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Can you help me with this menu?\n\nTaverna Nikolas\n1. Moussaka - Layers of eggplant, potato, ground beef, bechamel. €12\n2. Grilled Octopus - Fresh octopus, olive oil, lemon. €15\n3. Greek Salad - Tomato, cucumber, feta, olives. €8\n4. Pastitsio - Greek pasta bake with ground meat and bechamel. €11\n5. Souvlaki Plate - Grilled chicken skewers, rice, tzatziki. €13\n6. Spanakopita - Spinach and feta in phyllo pastry. €9"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_case_id": "full_onboarding_flow",
+      "conversation": [
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Help me set up my Tokyo trip!"
+              }
+            ]
+          }
+        },
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Flying ANA NH105 from LAX to NRT, Sept 1 departure 11am, arriving Sept 2 at 3pm. Conf: ANA2026."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Staying at Park Hyatt Tokyo, Sept 2-8. Confirmation: PH789012."
+              }
+            ]
+          }
+        },
+        {
+          "prompt": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "I don't eat shellfish, I love ramen and sushi, and I try to keep meals under 700 calories."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

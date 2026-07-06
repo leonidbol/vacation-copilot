@@ -1,0 +1,42 @@
+# 🔑 Secrets and Local Environment
+.env
+.env.local
+.env.example
+
+# 🐍 Python Build and Compilation
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*$py.class
+*.so
+.egg-info/
+dist/
+build/
+*.egg
+
+# 📦 Dependency Management and Virtual Environments
+.venv/
+venv/
+ENV/
+uv.lock
+
+# 🛠️ IDE and Editor Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 🖥️ Operating System Artifacts
+.DS_Store
+Thumbs.db
+
+# 🧪 Caches, Logs, and Tool Tooling
+.pytest_cache/
+.ruff_cache/
+.google-agents-cli/
+*.log
+
+# 💾 Runtime Data and Test Sandboxes
+data/
+!data/.gitkeepapp/.adk/
