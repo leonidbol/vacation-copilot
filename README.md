@@ -22,7 +22,7 @@ vacation-copilot/
 │   └── tools/                # Isolated functional Python tools
 ├── data/                     # Local isolated user storage sandboxes (auto-created)
 ├── tests/                    # Unit & integration test suites
-├── GEMINI.md                  # AI-assisted development context guide
+├── GEMINI.md                 # AI-assisted development context guide
 └── pyproject.toml            # Project dependencies and toolpins
 ```
 
@@ -45,26 +45,23 @@ Install the global agents package components if you haven't already:
 uvx google-agents-cli setup
 ```
 
-### 2. Configure Environment Access
+### 2. Synchronize Dependencies
+Install the required system libraries and isolate your local virtual environment before running CLI actions:
+```bash
+agents-cli install
+```
+
+### 3. Configure Environment Access
 Authenticate your shell with your Google Cloud account credentials:
 ```bash
 gcloud auth application-default login
 agents-cli login --interactive
 ```
+
 Create a `.env` file in your project root to export your targeted project parameters:
 ```bash
 GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
 GOOGLE_CLOUD_LOCATION="us-east1"
-```
-
-## 📖 Detailed Developer Documentation
-For a step-by-step breakdown of CLI configurations, interactive testing strategies, and the ADK Evaluation Flywheel, see the full [Installation and Usage Guide](docs/INSTRUCTIONS.md).
-
-
-### 3. Synchronize Dependencies
-Install the required system libraries and isolate your local virtual environment:
-```bash
-agents-cli install
 ```
 
 ### 4. Run the Local Playground
@@ -72,6 +69,11 @@ Launch the local development playground to interact with the agent in a web chat
 ```bash
 agents-cli playground
 ```
+
+---
+
+## 📖 Detailed Developer Documentation
+For a step-by-step breakdown of CLI configurations, interactive testing strategies, and the ADK Evaluation Flywheel, see the full [Installation and Usage Guide](docs/INSTRUCTIONS.md).
 
 ---
 
@@ -97,4 +99,3 @@ agents-cli playground
 
 ### 📈 Built-in Observability
 Vacation Copilot includes out-of-the-box OpenTelemetry configurations. All tool executions, token metrics, and reasoning loops automatically export to **Cloud Trace**, **Cloud Logging**, and target **BigQuery** analytics tables for continuous evaluation.
-```
